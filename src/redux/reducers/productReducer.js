@@ -1,11 +1,10 @@
-import ActionType from "../contants/action-type";
-
+import { ActionType } from "../contants/action-type";
 const initialState = {
   product: [
     {
       id: 1,
       title: "doston",
-      category:'fulstack developer..'
+      category: "Full-Stack developer..",
     },
   ],
 };
@@ -17,4 +16,4 @@ export const productReducer = (state = initialState, { type, payload }) => {
     default:
       return state;
   }
-}; 
+};

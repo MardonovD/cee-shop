@@ -1,15 +1,14 @@
-import ActionType from "../contants/action-type";
+import { ActionType } from "../contants/action-type";
 
-
-export const setProducts = (products) => {
+export const setProduct = (products) => {
   return {
     type: ActionType.SET_PRODUCTS,
     payload: products,
   };
 };
-export const selectProduct = (product) => {
+export const selectedProduct = (product) => {
   return {
-    type: ActionType.SELECTED_SET_PRODUCT,
+    type: ActionType.SELECTED_PRODUCT,
     payload: product,
   };
 };
